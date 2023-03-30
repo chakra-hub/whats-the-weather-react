@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+.App{
+  background-image: url('https://free4kwallpapers.com/uploads/originals/2015/07/16/nice-beach-suning-weather-hd-wallapaper.jpg');
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+.container{
+  width: 50%;
+  height: 65%;
+  background-color: black;
+  box-sizing: border-box;
+}
+.search_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.search_container>h1{
+  color: yellow;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_form{
+  display: flex;
+  justify-content: center;
+}
+.searchbox{
+  margin: 0 0 10px 0;
+  width: 60%;
+  height: 40px;
+  font-size: 18px;
+  padding: 5px;
+}
+.result{
+  display: flex;
+  height: 100%;
+  background-image: url('https://expertphotography.b-cdn.net/wp-content/uploads/2020/09/birds-eye-view-photography-herman-io.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.left{
+
+  width: 50%;
+  color: white;
+  height:68.7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.location{
+  align-self: flex-end;
+  margin: 10px;
+}
+.city{
+  font-weight: 500;
+  font-size: 25px;
+  color: white
+}
+.time{
+  font-size: 22px;
+}
+.date{
+  font-size: 14px;
+}
+.temp{
+  font-weight: 500;
+  font-size: 50px;
+  color: white;
+}
+.date_time_weather{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.right{
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather_icon{
+  filter:   saturate(100) hue-rotate(241.5deg);  
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  animation: rotation 1.2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: scale(1.07);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.weather_status{
+  font-size: 40px;
+}
+.weather_details{
+  list-style: none;
+  margin: 20px;
+}
+.weather_itme{
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+background-color: gray;
+opacity: 0.7;
+}
+.weather_values{
+  margin-left: 30px;
+}
+.notfound{
+  height: 68.8vh;
+  width: 100%;
+  display: flex;
+  color: white;
+  opacity: 0.6;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.noresult{
+  text-align: center;
+  font-size: 40px;
+}
+.project_details{
+  height: 85px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details{
+  font-size: 14px;
+  color: white;
+}
+.details>a{
+  color: white;
+  font-weight: 500;
+}
